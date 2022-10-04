@@ -6,6 +6,12 @@ terraform {
     }
   }
 
+  cloud {
+    organization = "sakuffoio"
+    workspaces {
+      name = "dSaku-tfaz"
+    }
+  }
 
   required_version = ">= 1.1.0"
 }
@@ -14,6 +20,7 @@ provider "azurerm" {
   features {
   }
 }
+
 
 resource "azurerm_resource_group" "etRG" {
   name     = var.rg_name
