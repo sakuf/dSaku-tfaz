@@ -1,5 +1,5 @@
 variable "rg_name" {
-  default = "evangelistTechnologic-dell"
+  default = "evangelistTechnologic"
 }
 
 variable "et_region_primary" {
@@ -15,5 +15,5 @@ variable "team_name" {
 }
 
 variable "net_name" {
-  default = "etDellNet"
+  default = "etNet"
 }
